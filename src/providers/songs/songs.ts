@@ -4,11 +4,16 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 @Injectable()
-export class songProvider {
+export class SongProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello Provider Provider');
+
+  }
+  getSongs(){
+    return this.http.get("http://localhost:8080/v1/songs")
   }
 
-
 }
+
+
+

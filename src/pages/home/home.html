@@ -8,13 +8,13 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor = "let song of songs">
+    <ion-item *ngFor = "let son of song">
         <ion-row>
           <ion-col col-4>
-              <img src={{song.image_small}}/>
+              <img src={{son.image_small}}/>
           </ion-col>
           <ion-col col-8>
-            <h2>{{song.title}}</h2>
+            <h2>{{son.title}}</h2>
             <h1>
               <button ion-button clear small color="danger" icon-start>
                 <ion-icon name='musical-notes'></ion-icon>
