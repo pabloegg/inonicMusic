@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Music
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor = "let song of songs">
+        <ion-row>
+          <ion-col col-4>
+              <img src={{song.image_small}}/>
+          </ion-col>
+          <ion-col col-8>
+            <h2>{{song.title}}</h2>
+            <h1>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='musical-notes'></ion-icon>
+                Listen
+              </button>
+            </h1>
+          </ion-col>
+        </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>
