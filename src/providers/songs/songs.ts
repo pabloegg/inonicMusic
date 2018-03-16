@@ -10,7 +10,8 @@ export class SongProvider {
 
   }
   getSongs(){
-    return this.http.get("http://localhost:8080/v1/songs")
+    return this.http.get("https://ionic-songhop.herokuapp.com/recommendations")
+    // return this.http.get("http://localhost:8080/v1/songs")
   }
 
 }

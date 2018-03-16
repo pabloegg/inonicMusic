@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>PlaySong</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <img src={{song.image_large}}/>
+
+  <ion-card-content>
+      <h1>
+        {{song.title}}
+      </h1>
+      <h3>
+        {{song.artist}}
+      </h3>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col text-center>
+        <button ion-button clear large color="danger" icon-start (click)="playSong()">
+          <ion-icon name={{status}}></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+</ion-content>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+// import { NavController } from 'ionic-angular';
 import { Song } from '../../models/songs/song.interface'
 // import { SONGS_LIST } from '../../mocks/songs/songs.mock'
 import { SongProvider } from '../../providers/songs/songs';

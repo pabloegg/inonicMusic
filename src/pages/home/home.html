@@ -16,7 +16,7 @@
           <ion-col col-8>
             <h2>{{son.title}}</h2>
             <h1>
-              <button ion-button clear small color="danger" icon-start>
+              <button ion-button clear small color="danger" icon-start navPush="PlayviewPage" [navParams]="{'song':son}">
                 <ion-icon name='musical-notes'></ion-icon>
                 Listen
               </button>
